@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+  }
+  .container {
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+  }
+  .sun {
+    position: absolute;
+    top: 10em;
+    left: 11em;
+    width: 9em;
+    height: 9em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+  }
+  .earth,
+  .moon {
+    position: absolute;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+  }
+  .earth {
+    top: 5em;
+    left: 5em;
+    width: 20em;
+    height: 20em;
+    animation: orbit 36.5s linear infinite;
+  }
+
+  .moon {
+    top: 0;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: orbit 2.7s linear infinite;
+  }
+  .earth::before,
+  .moon::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  .earth::before {
+    top: 2.8em;
+    right: 2.8em;
+    width: 3em;
+    height: 3em;
+    background-color: aqua;
+  }
+  .moon::before {
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+  }
+  p {
+    color: #fff;
+  }
+  h3{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: red  ;
+  }
+  @keyframes orbit {
+    to {
+      transform: rotate(360deg);
+    }
+}
+h1{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.box{
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+input{
+    border: none;
+    margin-bottom: 20px;
+    padding: 7px 0;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.text{
+    display: block;
+    margin-left: 75px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+input::placeholder{
+    color: green;
+    font-size: 10px;
+}
+
+.form{
+    margin-top: 250px;
+} 
+.a{
+text-decoration: none;
+color: green;
+transition: 5s;
+
+}
+.btn{
+    padding: 10px 50px;
+    border: 1px solid red;
+    background-image:url("../Без\ названия\ \(2\).jpg");
+    background-size: cover;
+
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 200px;
+}
+.btn:active{
+    border: 10px solid black;
+    transition: 3s;
+}

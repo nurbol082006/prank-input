@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+p {
+  text-align: center;
+  color: wheat;
+}
+body {
+  background-color: crimson;
+}
+button {
+  color: red;
+  background-color: aqua;
+  margin-top: 30px;
+  margin-left: 115px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px 20px gray;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
